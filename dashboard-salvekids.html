@@ -78,6 +78,20 @@
 .metric-point.after span,.metric-point.after strong{color:#047857}
 .metric-arrow{color:var(--text-3);font-size:18px}
 .metric-note{padding:9px 12px;background:var(--good-soft);color:#047857;font-size:12px;font-weight:700;font-style:italic}
+.rank-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.rank-card{border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface);overflow:hidden}
+.rank-card h3{margin:0;padding:14px 16px 4px;font-size:15px;line-height:1.35}
+.rank-values{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px 12px}
+.rank-value{text-align:center}
+.rank-value span{display:block;font-size:12px;line-height:1.2}
+.rank-value.before span{color:var(--bad)}
+.rank-value.after span{color:#047857}
+.rank-value strong{display:block;margin-top:3px;font-size:18px;line-height:1.1;font-weight:600;font-feature-settings:"tnum"}
+.rank-value.before strong{color:var(--bad)}
+.rank-value.after strong{color:#047857}
+.rank-note{padding:7px 10px;background:#d9ead3;color:#0f5132;font-size:13px;font-style:italic}
+.rank-note b{font-weight:700}
+.rank-count{display:block;margin-top:4px;color:var(--text-3);font-size:12px;font-style:normal}
 .result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .result-card{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);padding:16px}
 .result-card h3{margin:0 0 12px;font-size:16px}
@@ -96,7 +110,7 @@
 .details-toggle:focus-visible{outline:3px solid var(--primary-soft);outline-offset:3px}
 .details-report{margin-top:20px}
 .details-report[hidden]{display:none!important}
-@media (max-width:900px){.client-brief{padding:24px}.traffic-chart,.search-result{grid-template-columns:1fr}.engine-grid,.result-grid{grid-template-columns:1fr}.traffic-values,.traffic-values.inline{grid-template-columns:1fr}.mini-line{height:96px}.brief-traffic-echart{height:260px}}
+@media (max-width:900px){.client-brief{padding:24px}.traffic-chart,.search-result{grid-template-columns:1fr}.engine-grid,.result-grid,.rank-grid{grid-template-columns:1fr}.traffic-values,.traffic-values.inline{grid-template-columns:1fr}.mini-line{height:96px}.brief-traffic-echart{height:260px}}
 @media (max-width:560px){.client-brief{padding:20px;border-radius:var(--radius-lg)}.brief-head h1{font-size:30px}.brief-lead{font-size:15px}.metric-card-body{grid-template-columns:1fr;gap:8px}.metric-arrow{display:none}.traffic-card-head{grid-template-columns:1fr}.growth-badge{justify-self:start}.value-box strong{font-size:23px}}
 @media print{.details-toggle-wrap{display:none!important}.details-report[hidden]{display:block!important}.client-brief{break-inside:avoid;box-shadow:none}}
 /* END CLIENT BRIEF SUMMARY */
@@ -139,14 +153,15 @@
       </section>
       <section class="brief-section">
         <h2>Зачем это делали</h2>
-        <p>Родители часто ищут не услугу, а симптом или ситуацию: «ребёнок жалуется на зуб», «кровоточат дёсны», «чёрные зубы». Статьи отвечают на эти вопросы и ведут читателя к нужной услуге внутри сайта.</p>
+      <p>Родители часто ищут не услугу, а симптом или ситуацию: «ребёнок жалуется на зуб», «кровоточат дёсны», «чёрные зубы». Статьи отвечают на эти вопросы и ведут читателя к нужной услуге внутри сайта. Так мы усиливаем Topical Authority - авторитет сайта по теме: чем глубже сайт раскрывает детскую стоматологию, тем больше оснований у поиска показывать его выше по связанным запросам.</p>
       </section>
       <section class="brief-section">
         <h2>Что это даст дальше</h2>
         <ul class="brief-list">
           <li>поиск будет лучше понимать, что сайт подробно раскрывает детскую стоматологию;</li>
           <li>статьи смогут приводить родителей ещё до того, как они ищут конкретную процедуру;</li>
-          <li>ссылки из статей будут вести родителей на страницы услуг и помогать этим страницам чаще показываться.</li>
+          <li>ссылки из статей будут вести родителей на страницы услуг и помогать этим страницам чаще показываться;</li>
+        <li>сайт будет чаще занимать верхние позиции как более авторитетный источник по детской стоматологии.</li>
         </ul>
       </section>
       <section class="brief-section">
@@ -155,7 +170,7 @@
       </section>
       <section class="brief-section">
         <h2>Что будем делать в мае</h2>
-        <p>Будем усиливать опубликованные статьи, добавлять ссылки на услуги и смотреть, какие темы дают переходы. Темы с хорошей динамикой расширим новыми материалами.</p>
+      <p>Продолжим развивать блог, добавлять ссылки из статей на услуги и смотреть, какие темы дают переходы. Отдельно разберём группы услуг, где позиции ниже нужного уровня или растут медленнее: усилим структуру, тексты и внутренние ссылки.</p>
       </section>
     </div>
 
@@ -165,18 +180,38 @@
         <p>Ниже - только ключевые цифры. Подробные графики и таблицы раскрываются кнопкой ниже.</p>
       </div>
       <div class="result-flow">
-        <div class="engine-grid">
-          <article class="engine-box">
-            <div class="engine-box-head"><h3>Яндекс</h3><p>Запросы на первой странице.</p></div>
-            <div class="engine-metrics">
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>88</strong><em>в топ-10</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>93</strong><em>в топ-10</em></div></div><div class="metric-note">+5 запросов на первой странице</div></div>
+        <div class="rank-grid">
+          <article class="rank-card">
+            <h3>Процент запросов в ТОП-10 (Яндекс)</h3>
+            <div class="rank-values">
+              <div class="rank-value before"><span>Было:</span><strong>70%</strong><em class="rank-count">88 из 125</em></div>
+              <div class="rank-value after"><span>Стало:</span><strong>74%</strong><em class="rank-count">93 из 125</em></div>
             </div>
+            <div class="rank-note">Рост поисковых запросов в ТОП-10 <b>+4 п.п.</b></div>
           </article>
-          <article class="engine-box">
-            <div class="engine-box-head"><h3>Google</h3><p>Здесь рост заметнее: новые и старые запросы поднялись выше.</p></div>
-            <div class="engine-metrics">
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>79</strong><em>в топ-10</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>108</strong><em>в топ-10</em></div></div><div class="metric-note">+29 запросов на первой странице</div></div>
+          <article class="rank-card">
+            <h3>Процент запросов в ТОП-3 (Яндекс)</h3>
+            <div class="rank-values">
+              <div class="rank-value before"><span>Было:</span><strong>24%</strong><em class="rank-count">30 из 125</em></div>
+              <div class="rank-value after"><span>Стало:</span><strong>26%</strong><em class="rank-count">32 из 125</em></div>
             </div>
+            <div class="rank-note">Рост поисковых запросов в ТОП-3 <b>+2 п.п.</b></div>
+          </article>
+          <article class="rank-card">
+            <h3>Процент запросов в ТОП-10 (Google)</h3>
+            <div class="rank-values">
+              <div class="rank-value before"><span>Было:</span><strong>63%</strong><em class="rank-count">79 из 125</em></div>
+              <div class="rank-value after"><span>Стало:</span><strong>86%</strong><em class="rank-count">108 из 125</em></div>
+            </div>
+            <div class="rank-note">Рост поисковых запросов в ТОП-10 <b>+23 п.п.</b></div>
+          </article>
+          <article class="rank-card">
+            <h3>Процент запросов в ТОП-3 (Google)</h3>
+            <div class="rank-values">
+              <div class="rank-value before"><span>Было:</span><strong>40%</strong><em class="rank-count">50 из 125</em></div>
+              <div class="rank-value after"><span>Стало:</span><strong>60%</strong><em class="rank-count">75 из 125</em></div>
+            </div>
+            <div class="rank-note">Рост поисковых запросов в ТОП-3 <b>+20 п.п.</b></div>
           </article>
         </div>
       </div>
