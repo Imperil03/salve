@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>SEO Insight · salve.dental · апрель 2026</title>
+<title>Salve Dental · отчёт по SEO за апрель 2026</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237C5CFF'/%3E%3Cstop offset='1' stop-color='%23B794FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='72' font-family='Inter,Arial,sans-serif' font-size='62' font-weight='800' text-anchor='middle' fill='white'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 
 /* CLIENT BRIEF SUMMARY */
 .client-brief{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);padding:34px;margin-bottom:18px}
-.brief-head{max-width:940px;padding-bottom:20px;margin-bottom:22px;border-bottom:1px solid var(--border)}
+.brief-head{max-width:940px;padding-bottom:0;margin-bottom:22px;border-bottom:0}
 .brief-kicker{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;background:var(--primary-soft);color:var(--primary);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
 .brief-head h1{margin:0 0 12px;font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.03em}
 .brief-lead{margin:0;color:var(--text-2);font-size:17px;line-height:1.65;max-width:860px}
@@ -47,7 +47,10 @@
 .brief-list{display:grid;gap:7px;margin:0;padding:0;list-style:none;color:var(--text-2);font-size:15px;line-height:1.55}
 .brief-list li{position:relative;padding-left:18px}
 .brief-list li:before{content:"";position:absolute;left:0;top:.67em;width:7px;height:7px;border-radius:50%;background:var(--primary)}
-.brief-results{margin-top:28px;padding-top:24px;border-top:1px solid var(--border)}
+.brief-service-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.brief-service-links a{display:inline-flex;align-items:center;min-height:32px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--surface-2);color:var(--text-2);font-size:12.5px;font-weight:600;text-decoration:none}
+.brief-service-links a:hover{border-color:var(--primary-soft);background:var(--primary-wash);color:var(--primary)}
+.brief-results{margin-top:18px;padding-top:0;border-top:0}
 .brief-results-head{max-width:780px;margin-bottom:16px}
 .brief-results-head h2{margin:0 0 6px;font-size:22px;letter-spacing:-.02em}
 .brief-results-head p{margin:0;color:var(--text-3);font-size:14px;line-height:1.55}
@@ -58,11 +61,27 @@
 .traffic-card p,.engine-box p,.search-result p,.metric-card p{margin:6px 0 0;color:var(--text-3);font-size:13px;line-height:1.45}
 .growth-badge{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:0 11px;border-radius:999px;background:var(--good-soft);color:#047857;font-size:13px;font-weight:700;white-space:nowrap}
 .traffic-chart{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:18px;align-items:center;padding:4px 18px 18px}
+.traffic-chart.hero-chart{display:block;padding:4px 18px 20px}
+.brief-main-chart{height:360px;margin-top:14px;border:1px solid var(--border);border-radius:var(--radius-md);background:linear-gradient(180deg,#fff,rgba(247,243,255,.42))}
 .traffic-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.traffic-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.traffic-group{padding:12px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface-2)}
+.traffic-group-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;color:var(--text);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.traffic-group-title small{color:var(--text-3);font-size:11px;font-weight:700;text-transform:none;letter-spacing:0;white-space:nowrap}
+.traffic-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .value-box{padding:13px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface-2)}
+.traffic-group .value-box{background:var(--surface);min-width:0}
+.traffic-group .value-box.good{border-color:var(--good-soft);background:var(--good-wash)}
+.traffic-group .value-box.warn{border-color:var(--warn-soft);background:var(--warn-wash)}
 .value-box span{display:block;color:var(--text-3);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 .value-box strong{display:block;margin-top:5px;font-size:25px;line-height:1;font-weight:700;font-feature-settings:"tnum"}
 .value-box em{display:block;margin-top:5px;color:var(--text-3);font-size:12px;font-style:normal}
+.value-box b.good{color:var(--good);font-weight:800}
+.value-box b.warn{color:var(--warn);font-weight:800}
+.delta-chip{display:inline-flex;align-items:center;justify-content:center;padding:2px 7px;border-radius:999px;font-size:11px;font-weight:800;font-style:normal;font-feature-settings:"tnum";white-space:nowrap}
+.delta-chip.good{background:var(--good-wash);color:var(--good)}
+.delta-chip.bad{background:var(--bad-wash);color:var(--bad)}
+.delta-chip.info{background:var(--primary-wash);color:var(--primary)}
 .mini-line{width:100%;height:108px}
 .mini-line .axis{stroke:var(--border-2);stroke-width:1}
 .mini-line .area{fill:var(--primary-wash)}
@@ -70,10 +89,28 @@
 .mini-line .dot{fill:var(--primary)}
 .mini-line text{fill:var(--text-3);font-size:12px;font-weight:600}
 .engine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.visibility-section{max-width:none;margin:0}
+.visibility-section h3{margin:0 0 6px;font-size:20px;letter-spacing:-.02em}
+.visibility-section>p{margin:0 0 16px;color:var(--text-3);font-size:13.5px;line-height:1.55;max-width:820px}
+.visibility-table{margin:14px 16px 16px;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;background:var(--surface-2)}
+.engine-box .visibility-table{margin-top:12px}
+.visibility-row{display:grid;grid-template-columns:minmax(64px,.9fr) repeat(3,minmax(48px,.6fr)) minmax(128px,1.2fr);align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--border);font-size:13px;color:var(--text-2)}
+.visibility-row:first-child{border-top:0}
+.visibility-row.head{background:var(--surface);color:var(--text-3);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.visibility-row b{color:var(--text);font-weight:700;font-feature-settings:"tnum"}
+.visibility-row .up,.visibility-row .steady{display:inline-flex;align-items:center;justify-content:center;min-height:24px;padding:0 8px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.visibility-row .up{background:var(--good-wash);color:var(--good)}
+.visibility-row .steady{background:var(--primary-wash);color:var(--primary)}
+.engine-pill{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:999px;background:var(--surface-2);color:var(--text-3);font-size:11px;font-weight:800;white-space:nowrap}
+.engine-pill.yandex{background:var(--warn-wash);color:var(--warn)}
+.engine-pill.google{background:var(--good-wash);color:var(--good)}
+.visibility-summary{margin-top:14px;padding:14px 16px;border-radius:var(--radius-md);background:var(--primary-wash);color:var(--text-2);font-size:13.5px;line-height:1.6}
+.visibility-summary b{color:var(--text)}
 .engine-box{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);overflow:hidden}
-.engine-box-head{padding:16px 16px 0}
+.engine-box-head{padding:16px 16px 12px}
 .engine-metrics{display:grid;gap:10px;padding:14px 16px 16px}
 .metric-card{border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface-2);overflow:hidden}
+.metric-kind{margin:0;padding:11px 12px 0;color:var(--text);font-size:13px;font-weight:800;letter-spacing:-.005em}
 .metric-card-body{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;padding:12px}
 .metric-point span{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 .metric-point strong{display:block;margin-top:4px;font-size:28px;line-height:1;font-weight:700;font-feature-settings:"tnum"}
@@ -101,15 +138,126 @@
 .details-report{margin-top:20px}
 .details-report[hidden]{display:none!important}
 @media (max-width:900px){.client-brief{padding:24px}.traffic-chart,.search-result{grid-template-columns:1fr}.engine-grid,.result-grid{grid-template-columns:1fr}.traffic-values{grid-template-columns:1fr}.mini-line{height:96px}}
-@media (max-width:560px){.client-brief{padding:20px;border-radius:var(--radius-lg)}.brief-head h1{font-size:30px}.brief-lead{font-size:15px}.metric-card-body{grid-template-columns:1fr;gap:8px}.metric-arrow{display:none}.traffic-card-head{grid-template-columns:1fr}.growth-badge{justify-self:start}.value-box strong{font-size:23px}}
+@media (max-width:560px){.client-brief{padding:20px;border-radius:var(--radius-lg)}.brief-head h1{font-size:30px}.brief-lead{font-size:15px}.metric-card-body{grid-template-columns:1fr;gap:8px}.metric-arrow{display:none}.traffic-card-head{grid-template-columns:1fr}.growth-badge{justify-self:start}.value-box strong{font-size:23px}.traffic-groups,.traffic-pair{grid-template-columns:1fr}.traffic-group-title{align-items:flex-start;flex-direction:column;gap:2px}}
 @media print{.details-toggle-wrap{display:none!important}.details-report[hidden]{display:block!important}.client-brief{break-inside:avoid;box-shadow:none}}
 /* END CLIENT BRIEF SUMMARY */
+
+
+/* SALVE CLIENT STANDARD */
+.report-section{position:relative;margin:38px 0 0;padding:30px 0 0;border-top:1px solid var(--border-2)}
+.report-section:before{content:"";position:absolute;top:-1px;left:0;width:84px;height:2px;border-radius:999px;background:var(--primary-soft)}
+.report-section>.section-title{margin-top:0}
+.report-section.soft-band{padding:26px 24px 28px;border:1px solid var(--border);border-radius:22px;background:rgba(255,255,255,.48);box-shadow:var(--shadow-sm)}
+.report-section.soft-band>.section-title{margin-top:0}
+.details-intro{margin-bottom:24px;padding:18px 20px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);box-shadow:var(--shadow-sm)}
+.details-intro h2{margin:0 0 6px;font-size:22px;letter-spacing:-.02em}
+.details-intro p{margin:0;color:var(--text-2);font-size:14.5px;line-height:1.6;max-width:900px}
+.details-note{margin:14px 0 0;padding:12px 14px;border-radius:var(--radius-md);background:var(--primary-wash);color:var(--text-2);font-size:13.5px;line-height:1.55}
+.details-note b{color:var(--text);font-weight:700}
+.traffic-values.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.position-review{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.engine-card{position:relative;overflow:hidden}
+.engine-card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--primary)}
+.engine-card.yandex:before{background:var(--warn)}
+.engine-card.google:before{background:var(--good)}
+.engine-badge{display:inline-flex;align-items:center;padding:5px 10px;border-radius:999px;background:var(--primary-wash);color:var(--primary);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.engine-card.yandex .engine-badge{background:var(--warn-wash);color:var(--warn)}
+.engine-card.google .engine-badge{background:var(--good-wash);color:var(--good)}
+.position-metric{display:grid;grid-template-columns:110px minmax(0,1fr) minmax(180px,.58fr);gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--border)}
+.position-metric:first-of-type{border-top:0}
+.metric-name{font-size:12px;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.04em}
+.metric-name small{display:block;margin-top:2px;color:var(--text-3);font-size:11px;font-weight:600;text-transform:none;letter-spacing:0}
+.metric-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px}
+.flow-point{padding:9px 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);text-align:center}
+.flow-point b{display:block;font-size:22px;line-height:1;font-feature-settings:"tnum";color:var(--text)}
+.flow-point span{display:block;margin-top:4px;color:var(--text-3);font-size:11px;font-weight:700}
+.flow-arrow{color:var(--text-4);font-size:16px}
+.metric-outcome{padding:9px 11px;border-radius:10px;background:var(--good-wash);color:#047857;font-size:12.5px;font-weight:700;line-height:1.35}
+.metric-outcome.neutral{background:var(--primary-wash);color:var(--primary)}
+.metric-outcome.warn{background:var(--warn-wash);color:var(--warn)}
+#service-clusters{padding:26px 24px 28px;border:1px solid var(--primary-soft);border-radius:22px;background:linear-gradient(95deg,rgba(247,243,255,.86),rgba(255,255,255,.66));box-shadow:var(--shadow-sm)}
+#service-clusters .cluster-card{max-width:none;margin-bottom:0}
+.cluster-card .card-head{margin-bottom:14px}
+.service-story{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:16px}
+.service-story-main,.service-story-side{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);padding:18px;box-shadow:var(--shadow-sm)}
+.service-story-main h3,.service-story-side h3{margin:0 0 8px;font-size:16px;letter-spacing:-.01em}
+.service-story-main p,.service-story-side p{margin:0;color:var(--text-2);font-size:13.5px;line-height:1.55}
+.service-proof-list{display:grid;gap:10px;margin-top:14px}
+.service-proof{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+.service-proof b{display:block;color:var(--text);font-size:13.5px}
+.service-proof small{display:block;margin-top:3px;color:var(--text-3);font-size:11.5px;line-height:1.35}
+.service-proof strong{display:inline-flex;align-items:center;justify-content:center;min-width:70px;padding:7px 10px;border-radius:999px;background:var(--good-wash);color:var(--good);font-size:12.5px;font-weight:800;font-feature-settings:"tnum";white-space:nowrap}
+.service-growth-list{display:grid;gap:12px;margin-top:14px}
+.service-growth-item{padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);box-shadow:var(--shadow-sm)}
+.service-growth-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:10px}
+.service-growth-top b{display:block;color:var(--text);font-size:14px}
+.service-growth-top small{display:block;margin-top:3px;color:var(--text-3);font-size:11.5px;line-height:1.35}
+.service-growth-badge{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:var(--primary-wash);color:var(--primary);font-size:11px;font-weight:800;white-space:nowrap}
+.service-growth-bars{display:grid;gap:8px}
+.service-growth-bar{display:grid;grid-template-columns:70px minmax(0,1fr) 112px;gap:10px;align-items:center}
+.service-growth-bar span{color:var(--text-3);font-size:11px;font-weight:800}
+.service-growth-track{height:10px;border-radius:999px;background:#ebe7f4;overflow:hidden}
+.service-growth-track i{display:block;height:100%;border-radius:inherit;background:#c9c2d8}
+.service-growth-bar.current .service-growth-track i{background:linear-gradient(90deg,var(--primary),var(--good))}
+.service-growth-bar strong{color:var(--text);font-size:12px;font-weight:800;text-align:right;font-feature-settings:"tnum"}
+.service-cluster-flow{display:grid;gap:18px}
+.service-cluster-intro{max-width:860px;color:var(--text-2);font-size:13.5px;line-height:1.6}
+.service-cluster-intro p{margin:0}
+.service-compare{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(255,255,255,.52)}
+.service-compare-row{display:grid;grid-template-columns:minmax(180px,1.1fr) minmax(190px,1fr) 110px 110px minmax(220px,1.25fr);gap:14px;align-items:center;padding:14px 14px 14px 18px;border-top:1px solid var(--border)}
+.service-compare-row:first-child{border-top:0}
+.service-compare-head{padding:10px 0;color:var(--text-3);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.service-compare-row b{display:block;color:var(--text);font-size:13.5px}
+.service-compare-row small{display:block;margin-top:3px;color:var(--text-3);font-size:11.5px;line-height:1.35}
+.service-compare-number{font-size:20px;font-weight:800;color:var(--text);font-feature-settings:"tnum"}
+.service-compare-number span{display:block;margin-top:2px;color:var(--text-3);font-size:11px;font-weight:700}
+.service-compare-result{color:var(--text-2);font-size:13px;line-height:1.45}
+.service-compare-result b{display:inline;color:var(--good);font-weight:800}
+.service-compare-row.yandex{box-shadow:inset 3px 0 0 var(--warn)}
+.service-compare-row.google{box-shadow:inset 3px 0 0 var(--teal)}
+.service-cluster-next{padding:14px 0 0;border-top:1px dashed var(--border);color:var(--text-2);font-size:13.5px;line-height:1.55}
+.service-cluster-next b{color:var(--text)}
+.service-plan{display:grid;gap:10px;margin-top:14px}
+.service-plan li{list-style:none;padding:12px 13px;border-radius:12px;background:var(--primary-wash);color:var(--text-2);font-size:13px;line-height:1.45}
+.service-plan b{display:block;margin-bottom:3px;color:var(--text)}
+.theme-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.theme-row{display:grid;grid-template-columns:1fr;gap:8px;align-items:start;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+.theme-row b{color:var(--text)}
+.theme-row small{display:block;color:var(--text-3);font-size:11.5px;font-weight:600}
+.theme-bar{height:7px;border-radius:999px;background:#ebe7f4;overflow:hidden}
+.theme-bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--primary),var(--good))}
+.theme-delta{justify-self:start;padding:4px 8px;border-radius:999px;background:var(--good-wash);color:var(--good);font-size:12px;font-weight:800}
+.growth-panel{margin-bottom:16px}
+.growth-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.growth-card.yandex{border-top:4px solid var(--warn)}
+.growth-card.google{border-top:4px solid var(--good)}
+.growth-summary{margin:12px 0 0;padding:11px 13px;border-radius:10px;background:var(--surface-2);color:var(--text-2);font-size:13px;line-height:1.45}
+.growth-summary b{color:var(--text)}
+.result-note{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:var(--good-wash);color:var(--good);font-size:12px;font-weight:800;white-space:nowrap}
+table.data .pos-cell .pill{white-space:nowrap}
+.next-focus-list{display:grid;gap:10px;margin-top:14px}
+.next-focus{padding:13px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2);color:var(--text-2);font-size:13px;line-height:1.45}
+.next-focus b{display:block;margin-bottom:3px;color:var(--text)}
+.final-card{padding:20px 22px;background:linear-gradient(95deg,var(--good-wash),var(--primary-wash));border:1px solid var(--good-soft);border-radius:var(--radius-lg);color:var(--text-2);line-height:1.6}
+.final-card h3{margin:0 0 8px;color:var(--text);font-size:16px}
+.table-disclosure{border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--surface);box-shadow:var(--shadow-sm);overflow:hidden}
+.table-disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;padding:16px 18px;cursor:pointer;color:var(--text);font-weight:800;list-style:none}
+.table-disclosure summary::-webkit-details-marker{display:none}
+.table-disclosure summary span{color:var(--text-3);font-size:12px;font-weight:600;line-height:1.35}
+.table-disclosure summary:after{content:"Показать";display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:0 11px;border-radius:999px;background:var(--primary-wash);color:var(--primary);font-size:12px;font-weight:800;white-space:nowrap}
+.table-disclosure[open] summary:after{content:"Скрыть"}
+.table-disclosure .table-card{border:0;border-top:1px solid var(--border);border-radius:0;box-shadow:none}
+.table-disclosure .table-wrap{max-height:620px;overflow:auto}
+@media(max-width:1100px){.traffic-values.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.position-review,.growth-split,.service-story{grid-template-columns:1fr}.position-metric{grid-template-columns:1fr}.theme-list{grid-template-columns:1fr}.report-section.soft-band,#service-clusters{padding:20px 16px}.brief-main-chart{height:300px}.service-compare-row{grid-template-columns:minmax(180px,1fr) minmax(180px,1fr) 90px 90px}.service-compare-row>div:last-child{grid-column:1/-1}}
+@media(max-width:560px){.traffic-values.four{grid-template-columns:1fr}.theme-row{grid-template-columns:1fr}.theme-delta{justify-self:start}.brief-main-chart{height:260px}.service-proof,.service-growth-bar{grid-template-columns:1fr}.service-proof strong,.service-growth-bar strong{justify-self:start;text-align:left}.visibility-section h3{font-size:18px}.visibility-row{grid-template-columns:minmax(54px,1fr) repeat(3,minmax(38px,.62fr));gap:6px;padding:9px 10px;font-size:12px}.visibility-row span:nth-child(5){grid-column:1/-1;justify-self:start}.visibility-row.head span:nth-child(5){display:none}.engine-box-head{display:block}.engine-pill{margin-top:10px}.service-compare-head{display:none}.service-compare-row{grid-template-columns:1fr;gap:8px;padding:14px 12px 14px 18px}.table-disclosure summary{align-items:flex-start;flex-direction:column}}
+/* END SALVE CLIENT STANDARD */
 
 </style>
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><div class="logo">S</div><div class="name">SEO Insight<span>отчёт по продвижению salve.dental</span></div></div>
+  <div class="brand"><div class="logo">S</div><div class="name">Salve Dental<span>отчёт по работам за апрель</span></div></div>
   <div class="spacer"></div>
   <div class="period-pill" aria-label="Период наблюдения"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg><span>04.02 — 28.04.2026 · апрель</span></div>
   <button class="btn" onclick="window.print()" aria-label="Распечатать отчёт"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>Печать</button>
@@ -120,85 +268,102 @@
   <section class="client-brief" id="client-summary">
     <header class="brief-head">
       <span class="brief-kicker">Апрель 2026</span>
-      <h1>Salve Dental: коротко о работе за месяц</h1>
-      <p class="brief-lead">В апреле расширили структуру сайта: добавили страницы под отдельные услуги и подготовили их так, чтобы пациент быстрее находил нужную процедуру, а поиск точнее понимал, какие услуги есть в клинике.</p>
+      <h1>Salve Dental: отчёт по работам за апрель</h1>
+      <p class="brief-lead">В апреле доработали страницы взрослых услуг: профессиональная гигиена, AirFlow, ультразвуковая чистка, фторирование, реминерализация и лечение гингивита. Задача простая: человек из поиска должен попадать не в общий раздел, а сразу на нужную услугу и быстрее доходить до записи.</p>
     </header>
-
-    <div class="brief-story">
-      <section class="brief-section">
-        <h2>Что было сделано</h2>
-        <p>Проработали страницы по профгигиене, AirFlow, ультразвуковой чистке, фторированию, реминерализации, герметизации фиссур и лечению гингивита. Для страниц добавили тексты, вопросы и ответы, таблицы, заголовки для поисковой выдачи и внутренние ссылки.</p>
-      </section>
-      <section class="brief-section">
-        <h2>Зачем это делали</h2>
-        <p>Раньше часть спроса уходила на общие разделы. Теперь у каждой услуги есть отдельная посадочная страница: пациент видит конкретный ответ, а Яндекс и Google получают более понятную структуру сайта.</p>
-      </section>
-      <section class="brief-section">
-        <h2>Что это даст дальше</h2>
-        <ul class="brief-list">
-          <li>новые страницы будут постепенно набирать позиции по своим запросам;</li>
-          <li>поиск сможет точнее связывать услуги между собой через внутренние ссылки;</li>
-          <li>раздел профгигиены станет сильнее не одной общей страницей, а группой связанных услуг.</li>
-        </ul>
-      </section>
-      <section class="brief-section">
-        <h2>Какой результат уже виден</h2>
-        <p>Общий поисковый трафик пока почти на уровне марта: новые страницы не дают рост сразу. Зато в Яндексе уже видно движение: запросов в топ-10 стало больше, средняя позиция улучшилась, новые услуги начали попадать на первую страницу.</p>
-      </section>
-      <section class="brief-section">
-        <h2>Что будем делать в мае</h2>
-        <p>Продолжим развивать новые услуги, усилим страницы, которые уже вышли в топ-10, и поправим внутренние ссылки, чтобы пациенту было проще переходить от общей темы к конкретной процедуре.</p>
-      </section>
-    </div>
 
     <section class="brief-results" aria-label="Ключевые цифры">
       <div class="brief-results-head">
-        <h2>Цифры и было-стало</h2>
-        <p>Ниже - только ключевые цифры. Подробные графики и таблицы раскрываются кнопкой ниже.</p>
+        <h2>Ключевые цифры месяца</h2>
+        <p>Сравниваем старт работ, прошлый месяц и текущий отчёт. Подробные графики и таблицы открываются ниже.</p>
       </div>
       <div class="result-flow">
         <article class="traffic-card">
           <div class="traffic-card-head">
             <div>
               <h3>Поисковый трафик</h3>
-              <p>Март сравниваем с апрелем. Общий трафик почти не изменился, но Яндекс уже вырос.</p>
+              <p>Апрель почти повторил март по общему поиску, но Яндекс вырос на четверть. Это ранний сигнал: рост позиций совпал с ростом переходов из Яндекса.</p>
             </div>
             <span class="growth-badge">Яндекс +25,7%</span>
           </div>
-          <div class="traffic-chart">
-            <div class="traffic-values">
-              <div class="value-box"><span>март</span><strong>1 402</strong><em>перехода из поиска</em></div>
-              <div class="value-box"><span>апрель</span><strong>1 414</strong><em>переходов из поиска</em></div>
-              <div class="value-box"><span>рост</span><strong>+0,9%</strong><em>общий поиск</em></div>
+          <div class="traffic-chart hero-chart">
+            <div class="traffic-groups">
+              <div class="traffic-group">
+                <div class="traffic-group-title">Общий поиск <small>март → апрель</small></div>
+                <div class="traffic-pair">
+                  <div class="value-box"><span>март</span><strong>1 402</strong><em>перехода из поиска</em></div>
+                  <div class="value-box"><span>апрель</span><strong>1 414</strong><em><span class="delta-chip good">+0,9%</span> к марту</em></div>
+                </div>
+              </div>
+              <div class="traffic-group">
+                <div class="traffic-group-title">Поисковые системы <small>март → апрель</small></div>
+                <div class="traffic-pair">
+                  <div class="value-box"><span>Яндекс</span><strong>553</strong><em>перехода · <span class="delta-chip good">+25,7%</span> было 440 в марте</em></div>
+                  <div class="value-box"><span>Google</span><strong>861</strong><em>переход · <span class="delta-chip bad">−10,5%</span> было 962 в марте</em></div>
+                </div>
+              </div>
             </div>
-            <svg class="mini-line" viewBox="0 0 240 108" aria-hidden="true">
-              <line class="axis" x1="16" y1="82" x2="224" y2="82"></line>
-              <line class="axis" x1="16" y1="38" x2="224" y2="38"></line>
-              <path class="area" d="M22 70 L94 64 L164 48 L218 46 L218 84 L22 84 Z"></path>
-              <polyline class="line" points="22,70 94,64 164,48 218,46"></polyline>
-              <circle class="dot" cx="22" cy="70" r="4"></circle><circle class="dot" cx="218" cy="46" r="4"></circle>
-              <text x="16" y="102">март</text><text x="184" y="102">апрель</text>
-            </svg>
+            <div class="chart brief-main-chart" id="brief-traffic-chart" aria-label="График поискового трафика по неделям"></div>
           </div>
         </article>
-        <div class="engine-grid">
-          <article class="engine-box">
-            <div class="engine-box-head"><h3>Позиции в Яндексе</h3><p>Результат за месяц: с 31.03 по 28.04.</p></div>
-            <div class="engine-metrics">
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>168</strong><em>в топ-10</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>206</strong><em>в топ-10</em></div></div><div class="metric-note">+38 запросов на первой странице</div></div>
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>7,6</strong><em>средняя позиция</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>6,0</strong><em>средняя позиция</em></div></div><div class="metric-note">позиции стали выше на 1,6 пункта</div></div>
-            </div>
-          </article>
-          <article class="engine-box">
-            <div class="engine-box-head"><h3>Новые услуги</h3><p>Первые позиции по страницам, которые добавляли в апреле.</p></div>
-            <div class="engine-metrics">
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>0</strong><em>в топ-10 Яндекса</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>13</strong><em>в топ-10 Яндекса</em></div></div><div class="metric-note">страницы уже начали выходить на первую страницу</div></div>
-              <div class="metric-card"><div class="metric-card-body"><div class="metric-point before"><span>было</span><strong>222</strong><em>видимых запроса</em></div><div class="metric-arrow">→</div><div class="metric-point after"><span>стало</span><strong>237</strong><em>видимых запросов</em></div></div><div class="metric-note">+15 запросов в видимой зоне</div></div>
-            </div>
-          </article>
-        </div>
+        <section class="visibility-section" aria-label="Видимость в поиске">
+          <h3>Видимость в поиске: три контрольные точки</h3>
+          <p>Показываем стартовый срез 04.02, прошлый месяц 31.03 и текущий срез 28.04. Так видно не только «было-стало», но и динамику за время работы.</p>
+          <div class="engine-grid">
+            <article class="engine-box">
+              <div class="engine-box-head">
+                <div><h3>Яндекс: сильный рост к апрелю</h3><p>К 28.04 сайт вышел на первую страницу по 86% важных запросов. Это выше и старта, и марта.</p></div>
+                <span class="engine-pill yandex">04.02 · 31.03 · 28.04</span>
+              </div>
+              <div class="visibility-table">
+                <div class="visibility-row head"><span>Показатель</span><span>Старт</span><span>Март</span><span>Сейчас</span><span>Вывод</span></div>
+                <div class="visibility-row"><span>ТОП-10</span><b>75%</b><b>70%</b><b>86%</b><span class="up">на 11 пунктов выше старта</span></div>
+                <div class="visibility-row"><span>ТОП-3</span><b>33%</b><b>34%</b><b>40%</b><span class="up">на 7 пунктов выше старта</span></div>
+              </div>
+            </article>
+            <article class="engine-box">
+              <div class="engine-box-head">
+                <div><h3>Google: позиции выросли к апрелю</h3><p>В Google стало больше запросов на первой странице и в первых результатах, хотя переходов в апреле пока меньше.</p></div>
+                <span class="engine-pill google">04.02 · 31.03 · 28.04</span>
+              </div>
+              <div class="visibility-table">
+                <div class="visibility-row head"><span>Показатель</span><span>Старт</span><span>Март</span><span>Сейчас</span><span>Вывод</span></div>
+                <div class="visibility-row"><span>ТОП-10</span><b>74%</b><b>74%</b><b>78%</b><span class="steady">на 4 пункта выше старта</span></div>
+                <div class="visibility-row"><span>ТОП-3</span><b>39%</b><b>37%</b><b>43%</b><span class="steady">на 4 пункта выше старта</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="visibility-summary"><b>Что это значит:</b> по позициям апрель сильнее марта. В Яндексе рост уже совпал с ростом переходов, а по Google вывод делаем осторожно: позиции стали лучше, но переходов за месяц меньше. В мае смотрим, какие страницы с ростом позиций дают визиты и где нужно улучшить путь к записи.</div>
+        </section>
       </div>
     </section>
+
+    <div class="brief-story">
+      <section class="brief-section">
+        <h2>Что сделали</h2>
+        <p>Подготовили и доработали страницы услуг: добавили понятные описания процедур, цены и таблицы, ответы на частые вопросы, заголовки, которые человек видит в поиске, и переходы между связанными услугами.</p>
+        <div class="brief-service-links" aria-label="Доработанные страницы услуг">
+          <a href="https://salve.dental/stomatologiya/profgigiena" target="_blank" rel="noopener">Профгигиена</a>
+          <a href="https://salve.dental/stomatologiya/profgigiena/chistka-zubov-airflow" target="_blank" rel="noopener">AirFlow</a>
+          <a href="https://salve.dental/stomatologiya/profgigiena/ultrazvukovaya-chistka-zubov" target="_blank" rel="noopener">Ультразвуковая чистка</a>
+          <a href="https://salve.dental/stomatologiya/profgigiena/ftorirovanie-zubov" target="_blank" rel="noopener">Фторирование</a>
+          <a href="https://salve.dental/stomatologiya/profgigiena/remineralizatsiya-zubov" target="_blank" rel="noopener">Реминерализация</a>
+          <a href="https://salve.dental/stomatologiya/lechenie-djosen/lechenie-gingivita" target="_blank" rel="noopener">Гингивит</a>
+        </div>
+      </section>
+      <section class="brief-section">
+        <h2>Зачем это клинике</h2>
+        <p>Общая страница хуже отвечает человеку, который уже ищет конкретную процедуру. Отдельная страница помогает пациенту быстрее понять услугу, цену и следующий шаг, а клинике — получать больше переходов по запросам, где люди уже выбирают услугу или цену.</p>
+      </section>
+      <section class="brief-section">
+        <h2>Что уже видно</h2>
+        <p>С 31.03 по 28.04 Яндекс заметно прибавил: запросов на первой странице стало <b>206</b> вместо <b>168</b>, средняя позиция улучшилась с <b>7,6</b> до <b>6,0</b>. Google тоже вырос по позициям: в топ-10 стало <b>187</b> запросов вместо <b>177</b>.</p>
+      </section>
+      <section class="brief-section">
+        <h2>Что делаем дальше</h2>
+        <p>В мае закрепляем рост: дорабатываем страницы, которые уже поднялись, добавляем ответы, цены и понятные переходы к записи. Так будет проще понять, какие услуги начинают давать больше переходов из поиска.</p>
+      </section>
+    </div>
   </section>
   <!-- CLIENT BRIEF END -->
   <div class="details-toggle-wrap">
@@ -206,119 +371,107 @@
   </div>
   <!-- DETAILS REPORT START -->
   <div id="details-report" class="details-report" hidden>
+    <section class="details-intro">
+      <h2>Подробности отчёта</h2>
+      <p>Ниже показываем, из каких фактов складывается вывод за апрель: позиции в Яндексе и Google, рост по группам услуг, запросы с заметным улучшением, поисковый трафик и план на май.</p>
+    </section>
 
-  <nav class="tab-nav" aria-label="Разделы отчёта">
-    <a class="tab active" href="#summary">Итоги <span class="tab-meta">апрель</span></a>
-    <a class="tab" href="#positions">Позиции <span class="tab-meta">239 запросов</span></a>
-    <a class="tab" href="#works">Что сделано <span class="tab-meta">7 страниц</span></a>
-    <a class="tab" href="#traffic">Трафик <span class="tab-meta">март — апрель на 28.04</span></a>
-  </nav>
-  <section id="summary">
-    <header class="page-head">
-      <h1>SEO-отчёт за апрель <span class="id">salve.dental · Сургут</span> <span class="badge-status"><span class="dot"></span>рост позиций</span></h1>
-      <p class="desc">В апреле основной фокус был не на разовых технических правках, а на расширении структуры сайта: мы создали и оптимизировали посадочные страницы под конкретные услуги, добавили FAQ, таблицы, мета-теги и связали страницы между собой. Это база для роста поискового трафика в следующие месяцы.</p>
-    </header>
-    <div class="insight good" role="region" aria-label="Главный вывод"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div><div class="text"><b>Главный результат месяца — рост видимости в Яндексе.</b> Количество запросов в топ-10 выросло с <b>168</b> до <b>206</b>, а по новым услугам появилось <span class="pos">13 запросов в топ-10</span>. Общий поисковый трафик пока почти ровный, потому что новые страницы только начали индексироваться.</div></div>
-    <div class="caveat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg><div><b>Трафик в апреле оцениваем аккуратно.</b> SEO-эффект новых страниц обычно запаздывает: сначала поисковик индексирует и переоценивает страницы, затем растут позиции, и только после этого рост переходит в визиты и заявки.</div></div>
-    <div class="kpi-row">
-      <div class="kpi"><div class="kpi-top"><span class="kpi-label">Топ-10 Яндекса</span><span class="kpi-delta good">+38</span></div><div class="kpi-value">206<span class="unit">запросов</span></div><div class="kpi-sub">31.03 было <b>168</b> · рост за апрель</div></div>
-      <div class="kpi"><div class="kpi-top"><span class="kpi-label">Видимость в Яндексе</span><span class="kpi-delta good">+15</span></div><div class="kpi-value">237<span class="unit">из 239</span></div><div class="kpi-sub">31.03 было <b>222</b> · сайт виден чаще</div></div>
-      <div class="kpi"><div class="kpi-top"><span class="kpi-label">Средняя позиция</span><span class="kpi-delta good">7,6 → 6,0</span></div><div class="kpi-value">6,0</div><div class="kpi-sub">чем меньше число, тем выше сайт в выдаче</div></div>
-      <div class="kpi"><div class="kpi-top"><span class="kpi-label">Новые услуги</span><span class="kpi-delta good">0 → 13</span></div><div class="kpi-value">13<span class="unit">в топ-10</span></div><div class="kpi-sub">AirFlow · фторирование · реминерализация · десны</div></div>
-    </div>
-    <div class="grid-1-1">
-      <div class="card"><div class="card-head"><div><h3 class="card-title">Распределение позиций · Яндекс</h3><p class="card-desc">В апреле вырос не только топ-10, но и глубина видимости: меньше запросов осталось вне выдачи.</p></div><span class="card-tag good">+38 в топ-10</span></div><div class="chart tall" id="chart-yandex"></div></div>
-      <div class="card"><div class="card-head"><div><h3 class="card-title">Новые услуги начали ранжироваться</h3><p class="card-desc">По части новых страниц в начале апреля позиций ещё не было. К 28.04 Яндекс уже поставил 13 запросов в топ-10.</p></div><span class="card-tag info">ранний эффект</span></div><div class="chart tall" id="chart-new"></div></div>
-    </div>
-  </section>
-  <section id="positions">
-    <h2 class="section-title">Динамика позиций <span class="meta">февраль — март — апрель</span></h2>
-    <div class="grid-2-1">
-      <div class="card"><div class="card-head"><div><h3 class="card-title">Группы, где заметен апрельский рост</h3><p class="card-desc">Сильнее всего выросли темы, связанные с расширением структуры: профгигиена, детские услуги и новые посадочные.</p></div><span class="card-tag good">Яндекс</span></div><div class="chart tall" id="chart-groups"></div></div>
-      <div class="card"><div class="card-head"><div><h3 class="card-title">Google остаётся стабильным</h3><p class="card-desc">В Google большая часть видимых запросов уже находится в топ-10. Основной прирост апреля лучше виден в Яндексе: там выросли позиции и видимость новых страниц.</p></div><span class="card-tag info">187 в топ-10</span></div><div class="chart tall" id="chart-google"></div></div>
-    </div>
-  </section>
+    <section id="positions" class="report-section">
+      <h2 class="section-title">Позиции: что изменилось <span class="meta">04.02 · 31.03 · 28.04</span></h2>
+      <div class="position-review">
+        <article class="card engine-card yandex">
+          <div class="card-head"><div><span class="engine-badge">Яндекс</span><h3 class="card-title" style="margin-top:10px">Апрель дал сильный рост</h3><p class="card-desc">Сравниваем старт работ 04.02, прошлый месяц 31.03 и текущий отчёт 28.04. В Яндексе выросли и первая страница, и первые три позиции.</p></div></div>
+          <div class="position-metric"><div class="metric-name">ТОП-10<small>первая страница</small></div><div class="metric-flow"><div class="flow-point"><b>179</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>168</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>206</b><span>28.04</span></div></div><div class="metric-outcome">на 38 запросов больше, чем в марте</div></div>
+          <div class="position-metric"><div class="metric-name">ТОП-3<small>первые места</small></div><div class="metric-flow"><div class="flow-point"><b>79</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>82</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>96</b><span>28.04</span></div></div><div class="metric-outcome">на 14 запросов больше, чем в марте</div></div>
+          <div class="position-metric"><div class="metric-name">Сайт виден<small>по скольким запросам</small></div><div class="metric-flow"><div class="flow-point"><b>207</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>222</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>237</b><span>28.04</span></div></div><div class="metric-outcome neutral">почти все 239 запросов видны</div></div>
+          <p class="details-note"><b>Что это значит для клиента:</b> сайт чаще попадает на первую страницу поиска по запросам, где человек уже выбирает стоматологию или конкретную услугу. Следующий шаг — удержать эти позиции и довести человека до страницы услуги, цены или записи.</p>
+        </article>
+        <article class="card engine-card google">
+          <div class="card-head"><div><span class="engine-badge">Google</span><h3 class="card-title" style="margin-top:10px">Позиции тоже выросли</h3><p class="card-desc">Google в апреле улучшился по позициям: стало больше запросов на первой странице и в первых трёх результатах.</p></div></div>
+          <div class="position-metric"><div class="metric-name">ТОП-10<small>первая страница</small></div><div class="metric-flow"><div class="flow-point"><b>177</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>177</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>187</b><span>28.04</span></div></div><div class="metric-outcome">на 10 запросов больше, чем в марте</div></div>
+          <div class="position-metric"><div class="metric-name">ТОП-3<small>первые места</small></div><div class="metric-flow"><div class="flow-point"><b>94</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>88</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>103</b><span>28.04</span></div></div><div class="metric-outcome">на 15 запросов больше, чем в марте</div></div>
+          <div class="position-metric"><div class="metric-name">Сайт виден<small>по скольким запросам</small></div><div class="metric-flow"><div class="flow-point"><b>184</b><span>04.02</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>179</b><span>31.03</span></div><span class="flow-arrow">→</span><div class="flow-point"><b>187</b><span>28.04</span></div></div><div class="metric-outcome neutral">плюс 8 видимых запросов за месяц</div></div>
+          <p class="details-note"><b>Оговорка по Google:</b> трафик из Google за апрель ниже марта, поэтому вывод делаем аккуратно. Позиции улучшились, а переходы будем проверять в мае по фактическим визитам и заявкам.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="works">
-      <h2 class="section-title good">Что было сделано <span class="meta">структура и посадочные страницы</span></h2>
-      <div class="work-summary"><h3>В апреле расширили структуру сайта</h3><p>На сайте появились отдельные страницы под конкретные процедуры и запросы пациентов. Так поисковику проще понять, какую услугу показывает страница, а пользователю проще попасть сразу на нужный раздел.</p><div class="work-list"><div class="work-chip"><b>Мета-теги</b>Title и Description для новых страниц</div><div class="work-chip"><b>FAQ</b>ответы на реальные вопросы пациентов</div><div class="work-chip"><b>Таблицы</b>цены, методы, сравнения процедур</div><div class="work-chip"><b>Перелинковка</b>связь услуг внутри кластера</div></div></div>
-      <div class="card table-card"><div class="table-head"><div><h3>Список работ <span class="count">7 направлений</span></h3><p>Основные страницы и доработки, которые усиливают структуру сайта и помогают продвигать новые услуги.</p></div></div><div class="table-wrap"><table><thead><tr><th>Страница / направление</th><th>Роль страницы</th><th>Что добавили</th></tr></thead><tbody><tr><td class="section-name"><a href="https://salve.dental/stomatologiya/profgigiena" target="_blank" rel="noopener">Профгигиена зубов</a></td><td>Базовая коммерческая страница под частотный спрос по профессиональной гигиене.</td><td>Страница услуги, мета-теги, структура, цены, FAQ и внутренняя перелинковка.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/detskaya-stomatologiya/germetizatsiya-fissur" target="_blank" rel="noopener">Герметизация фиссур</a></td><td>Профилактический детский спрос, который расширяет семантику Salve Kids.</td><td>Страница с показаниями, возрастом пациентов, блоком «кому подходит» и FAQ.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/stomatologiya/profgigiena/chistka-zubov-airflow" target="_blank" rel="noopener">Чистка зубов AirFlow</a></td><td>Отдельная посадочная под конкретную технологию чистки.</td><td>Описание метода, отличия от ультразвуковой чистки, преимущества и FAQ.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/stomatologiya/profgigiena/ultrazvukovaya-chistka-zubov" target="_blank" rel="noopener">Ультразвуковая чистка зубов</a></td><td>Основной коммерческий запрос внутри профгигиены.</td><td>Этапы процедуры, показания, цены, FAQ и связь с общей страницей профгигиены.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/stomatologiya/profgigiena/ftorirovanie-zubov" target="_blank" rel="noopener">Фторирование зубов</a></td><td>Запросы по укреплению эмали и профилактике чувствительности.</td><td>Описание процедуры, показания, эффект после курса, таблица сравнения.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/stomatologiya/profgigiena/remineralizatsiya-zubov" target="_blank" rel="noopener">Реминерализация зубов</a></td><td>Запросы по восстановлению эмали и начальной деминерализации.</td><td>Процедура, результаты, ограничения, FAQ и связь с профилактикой.</td></tr>
-<tr><td class="section-name"><a href="https://salve.dental/stomatologiya/lechenie-djosen/lechenie-gingivita" target="_blank" rel="noopener">Лечение гингивита</a></td><td>Новая точка входа по симптомам кровоточивости и воспаления десен.</td><td>Страница с симптомами, причинами, лечением, таблицей симптомов и FAQ.</td></tr>
-</tbody></table></div></div>
-  </section>
+    <section id="service-clusters" class="report-section">
+      <h2 class="section-title">Группы услуг с ростом <span class="meta">март → апрель</span></h2>
+      <div class="service-cluster-flow">
+        <div class="service-cluster-intro">
+          <p>Группа услуг — это несколько похожих запросов про одну процедуру. Ниже считаем, сколько таких запросов попало в топ-10, то есть на первую страницу поиска. Изменение сравниваем с мартом.</p>
+        </div>
+        <div class="service-compare" role="table" aria-label="Рост групп услуг">
+          <div class="service-compare-row service-compare-head" role="row">
+            <div>Группа услуг</div><div>Что считаем</div><div>Март</div><div>Апрель</div><div>Что изменилось</div>
+          </div>
+          <div class="service-compare-row yandex" role="row">
+            <div><b>Новые взрослые услуги</b><small>страницы услуг, которые доработали в апреле</small></div>
+            <div><b>Запросы в топ-10 Яндекса</b><small>сколько запросов уже на первой странице</small></div>
+            <div class="service-compare-number">0<span>запросов</span></div>
+            <div class="service-compare-number">13<span>запросов</span></div>
+            <div class="service-compare-result"><b>На 13 запросов больше, чем в марте.</b> Значит, новые страницы начали появляться на первой странице Яндекса.</div>
+          </div>
+          <div class="service-compare-row yandex" role="row">
+            <div><b>Чистка зубов</b><small>профессиональная гигиена, AirFlow, ультразвук</small></div>
+            <div><b>Запросы в топ-10 Яндекса</b><small>сколько запросов по услуге уже на первой странице</small></div>
+            <div class="service-compare-number">15<span>запросов</span></div>
+            <div class="service-compare-number">20<span>запросов</span></div>
+            <div class="service-compare-result"><b>На 5 запросов больше, чем в марте.</b> Услуга чаще видна тем, кто ищет чистку зубов в Сургуте.</div>
+          </div>
+          <div class="service-compare-row google" role="row">
+            <div><b>Импланты</b><small>запросы про имплантацию и цену</small></div>
+            <div><b>Запросы в топ-10 Google</b><small>сколько запросов уже на первой странице</small></div>
+            <div class="service-compare-number">12<span>запросов</span></div>
+            <div class="service-compare-number">20<span>запросов</span></div>
+            <div class="service-compare-result"><b>На 8 запросов больше, чем в марте.</b> Направление стало заметнее в Google, хотя общий трафик из Google пока ниже.</div>
+          </div>
+        </div>
+        <div class="service-cluster-next"><b>Что это даёт клинике:</b> когда у услуги есть отдельная понятная страница, пациент быстрее видит цену, условия, врача и кнопку записи. В мае берём услуги, где люди уже ищут цену, врача, лечение или запись в Сургуте, и делаем для них такие же подробные страницы.</div>
+      </div>
+    </section>
 
-  <section id="published">
+    <section id="growth" class="report-section">
+      <h2 class="section-title">Запросы, где позиции выросли</h2>
+      <div class="growth-panel">
+        <div class="table-head"><div><h3>Примеры заметного роста</h3><p>Показываем взрослые направления, по которым сайт стал выше с 31.03 по 28.04. Яндекс и Google разделены, чтобы не смешивать разные поисковые системы.</p></div></div>
+        <div class="growth-split">
+          <div class="card growth-card yandex"><div class="table-head"><div><h3>Яндекс</h3><p>Запросы, которые поднялись за апрель.</p></div></div><div class="table-wrap"><table class="data"><thead><tr><th>Запрос</th><th>31.03</th><th>28.04</th><th>Итог</th></tr></thead><tbody id="growth-yandex-body"></tbody></table></div><p class="growth-summary" id="growth-yandex-summary"></p></div>
+          <div class="card growth-card google"><div class="table-head"><div><h3>Google</h3><p>Запросы, которые поднялись или появились в верхней части выдачи.</p></div></div><div class="table-wrap"><table class="data"><thead><tr><th>Запрос</th><th>31.03</th><th>28.04</th><th>Итог</th></tr></thead><tbody id="growth-google-body"></tbody></table></div><p class="growth-summary" id="growth-google-summary"></p></div>
+        </div>
+      </div>
+    </section>
 
-    <h2 class="section-title good">Что мы опубликовали <span class="meta">апрельские страницы</span></h2>
-    <div class="published-intro">
-      <div><b>Новые страницы уже появились в выдаче.</b> Ниже — примеры запросов, где в начале апреля позиции были слабыми или отсутствовали, а к 28.04 страница вышла в топ-10 Яндекса.</div>
-      <span>13 запросов в топ-10</span>
-    </div>
-    <div class="published-grid">
-        <article class="published-card">
-          <div class="published-top"><div><h3>Чистка зубов AirFlow</h3><a href="https://salve.dental/stomatologiya/profgigiena/chistka-zubov-airflow" target="_blank" rel="noopener">/stomatologiya/profgigiena/chistka-zubov-airflow</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>1 → 4 <span>запроса</span></strong></div>
-            <div><small>Средняя позиция</small><strong>10,8 → 3,8</strong><em>выше на 7,0</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>чистка зубов airflow стоматология</span><b class="top3">3 → 1</b></div><div class="pub-query"><span>чистка зубов airflow сургут</span><b class="top10">16 → 10</b></div><div class="pub-query"><span>чистка зубов аирфлоу стоматология</span><b class="top3">13 → 2</b></div><div class="pub-query"><span>чистка зубов аирфлоу сургут</span><b class="top3">11 → 2</b></div></div>
-        </article>
-        <article class="published-card">
-          <div class="published-top"><div><h3>Ультразвуковая чистка зубов</h3><a href="https://salve.dental/stomatologiya/profgigiena/ultrazvukovaya-chistka-zubov" target="_blank" rel="noopener">/stomatologiya/profgigiena/ultrazvukovaya-chistka-zubov</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>1 → 2 <span>запроса</span></strong></div>
-            <div><small>Средняя позиция</small><strong>10,0 → 5,5</strong><em>выше на 4,5</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>ультразвуковая чистка зубов стоматология</span><b class="top3">6 → 1</b></div><div class="pub-query"><span>ультразвуковая чистка зубов сургут</span><b class="top10">14 → 10</b></div></div>
-        </article>
-        <article class="published-card">
-          <div class="published-top"><div><h3>Фторирование зубов</h3><a href="https://salve.dental/stomatologiya/profgigiena/ftorirovanie-zubov" target="_blank" rel="noopener">/stomatologiya/profgigiena/ftorirovanie-zubov</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>0 → 2 <span>запроса</span></strong></div>
-            <div><small>Средняя позиция</small><strong>19,0 → 4,5</strong><em>выше на 14,5</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>фторирование зубов стоматология</span><b class="top10">101 → 6</b></div><div class="pub-query"><span>фторирование зубов сургут</span><b class="top3">19 → 3</b></div></div>
-        </article>
-        <article class="published-card">
-          <div class="published-top"><div><h3>Реминерализация зубов</h3><a href="https://salve.dental/stomatologiya/profgigiena/remineralizatsiya-zubov" target="_blank" rel="noopener">/stomatologiya/profgigiena/remineralizatsiya-zubov</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>0 → 2 <span>запроса</span></strong></div>
-            <div><small>Средняя позиция</small><strong>22,0 → 2,5</strong><em>выше на 19,5</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>реминерализация зубов стоматология</span><b class="top3">101 → 3</b></div><div class="pub-query"><span>реминерализация зубов сургут</span><b class="top3">22 → 2</b></div></div>
-        </article>
-        <article class="published-card">
-          <div class="published-top"><div><h3>Лечение гингивита</h3><a href="https://salve.dental/stomatologiya/lechenie-djosen/lechenie-gingivita" target="_blank" rel="noopener">/stomatologiya/lechenie-djosen/lechenie-gingivita</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>0 → 2 <span>запроса</span></strong></div>
-            <div><small>Средняя позиция</small><strong>14,0 → 5,5</strong><em>выше на 8,5</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>лечение гингивита стоматология</span><b class="top10">101 → 5</b></div><div class="pub-query"><span>лечение гингивита сургут</span><b class="top10">14 → 6</b></div></div>
-        </article>
-        <article class="published-card">
-          <div class="published-top"><div><h3>Герметизация фиссур</h3><a href="https://salve.dental/detskaya-stomatologiya/germetizatsiya-fissur" target="_blank" rel="noopener">/detskaya-stomatologiya/germetizatsiya-fissur</a></div><span>опубликовано</span></div>
-          <div class="published-metrics">
-            <div><small>Запросов в топ-10 Яндекса</small><strong>0 → 1 <span>запрос</span></strong></div>
-            <div><small>Средняя позиция</small><strong>101 → 3,0</strong><em>новые позиции</em></div>
-          </div>
-          <div class="published-queries"><div class="pub-query-head"><span>Позиции в Яндексе</span><span>09.04 → 28.04</span></div><div class="pub-query"><span>герметизация фиссур стоматология</span><b class="muted">101 → 101</b></div><div class="pub-query"><span>герметизация фиссур сургут</span><b class="top3">101 → 3</b></div></div>
-        </article>
-    </div>
-    <div class="card table-card" style="margin-bottom:16px;"><div class="table-head"><div><h3>Новые и доработанные услуги <span class="count">14 запросов</span></h3><p>Запросы, которые напрямую связаны с профгигиеной, AirFlow, фторированием, реминерализацией, гингивитом и герметизацией фиссур.</p></div></div><div class="table-wrap"><table class="data"><thead><tr><th>Запрос</th><th>Яндекс 09.04</th><th>Яндекс 28.04</th><th>Google 09.04</th><th>Google 28.04</th></tr></thead><tbody id="new-queries-body"></tbody></table></div></div>
-  </section>
-  <section id="traffic">
-    <h2 class="section-title">Поисковый трафик <span class="meta">март — апрель на 28.04</span></h2>
-    <div class="kpi-row three"><div class="kpi"><div class="kpi-top"><span class="kpi-label">Общий поиск</span><span class="kpi-delta info">+0,9%</span></div><div class="kpi-value">1&nbsp;414<span class="unit">визитов</span></div><div class="kpi-sub">март: <b>1&nbsp;402</b> · апрель еще не закрыт</div></div><div class="kpi"><div class="kpi-top"><span class="kpi-label">Яндекс</span><span class="kpi-delta good">+25,7%</span></div><div class="kpi-value">553<span class="unit">визита</span></div><div class="kpi-sub">март: <b>440</b> · поисковик уже реагирует</div></div><div class="kpi"><div class="kpi-top"><span class="kpi-label">Google</span><span class="kpi-delta warn">−10,5%</span></div><div class="kpi-value">861<span class="unit">визит</span></div><div class="kpi-sub">март: <b>962</b> · сравниваем как часть общего поиска</div></div></div>
-    <div class="card"><div class="card-head"><div><h3 class="card-title">Визиты из поисковых систем по неделям</h3><p class="card-desc">В апреле заметен рост визитов из Яндекса. Общий график пока не отражает всю работу по новым страницам: SEO-эффект новых посадочных появляется с задержкой.</p></div><span class="card-tag warn">апрель не закрыт</span></div><div class="chart" id="chart-traffic"></div></div>
-    <h2 class="section-title good">Итог апреля и план на май <span class="meta">следующий месяц</span></h2><div class="insight good"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><div class="text"><b>По апрелю есть положительная динамика.</b> Яндекс уже отреагировал на расширение структуры: выросли топ-10, видимость и позиции по новым услугам. В мае продолжаем развивать новые посадочные и корректировать структуру сайта по фактическим позициям.</div></div><div class="next-steps"><div class="step-card"><div class="step-num">1</div><h3>Развивать новые услуги</h3><p>Усилить страницы AirFlow, фторирования, реминерализации, гингивита и герметизации фиссур: добавить внутренние ссылки, блоки доверия и уточнения под спрос.</p></div><div class="step-card"><div class="step-num">2</div><h3>Корректировать структуру</h3><p>По итогам индексации посмотреть, где нужна отдельная посадочная, а где достаточно доработать текущий раздел и связать его с соседними услугами.</p></div><div class="step-card"><div class="step-num">3</div><h3>Переводить позиции в трафик</h3><p>Отслеживать, какие запросы закрепились в топ-10, и усиливать сниппеты, мета-теги и FAQ, чтобы рост позиций начал давать больше переходов.</p></div></div>
-    <div class="card table-card"><div class="table-head"><div><h3>Полная таблица позиций <span class="count">239 запросов</span></h3><p>Запросы сгруппированы по направлениям, как в рабочей семантике. Цвет позиции показывает зону выдачи: <span class="legend-chip" style="background:#10b981;color:#fff;">1–3</span> топ-3 · <span class="legend-chip" style="background:#d1fae5;color:#047857;">4–10</span> топ-10 · <span class="legend-chip" style="background:#fef3c7;color:#92400e;">11–30</span> топ-30 · <span class="legend-chip" style="background:#fee2e2;color:#991b1b;">31–100</span> топ-100 · <span class="legend-chip" style="background:#f1f0f5;color:#8a85a3;box-shadow:inset 0 0 0 1px var(--border);">—</span> не найдено.</p></div></div><div class="table-wrap"><table class="data" id="salve-position-table"><thead><tr><th rowspan="2" style="vertical-align:bottom;">Запрос</th><th colspan="4" style="text-align:center;border-right:1px solid var(--border);background:rgba(245,158,11,.06);color:#b67517;">Яндекс</th><th colspan="4" style="text-align:center;background:rgba(124,92,255,.05);color:var(--primary);">Google</th></tr><tr><th style="text-align:center;background:rgba(245,158,11,.04)">04.02</th><th style="text-align:center;background:rgba(245,158,11,.04)">31.03</th><th style="text-align:center;background:rgba(245,158,11,.04)">28.04</th><th style="text-align:center;background:var(--surface-2);border-right:1px solid var(--border);">Δ</th><th style="text-align:center;background:rgba(124,92,255,.03)">04.02</th><th style="text-align:center;background:rgba(124,92,255,.03)">31.03</th><th style="text-align:center;background:rgba(124,92,255,.03)">28.04</th><th style="text-align:center;background:var(--surface-2);">Δ</th></tr></thead><tbody id="full-positions-body"></tbody></table></div></div>
-    <div class="footnotes"><p><sup>1</sup> Позиция меньше — лучше: 1 означает первое место в выдаче.</p><p><sup>2</sup> Видимость — количество запросов, по которым сайт найден в выдаче. Это не равно визитам: визиты появляются позже, когда позиции закрепляются и набирают показы.</p><p><sup>3</sup> Позиции сравниваем по контрольным датам февраля, марта и апреля. Трафик за апрель показан на дату отчета.</p></div>
-  </section>
+    <section id="traffic" class="report-section soft-band">
+      <h2 class="section-title">Поисковый трафик <span class="meta">март → апрель на 28.04</span></h2>
+      <div class="kpi-row">
+        <div class="kpi"><div class="kpi-top"><span class="kpi-label">Общий поиск</span><span class="kpi-delta info">+0,9%</span></div><div class="kpi-value">1&nbsp;414<span class="unit">визитов</span></div><div class="kpi-sub">март: <b>1&nbsp;402</b></div></div>
+        <div class="kpi"><div class="kpi-top"><span class="kpi-label">Яндекс</span><span class="kpi-delta good">+25,7%</span></div><div class="kpi-value">553<span class="unit">визита</span></div><div class="kpi-sub">март: <b>440</b></div></div>
+        <div class="kpi"><div class="kpi-top"><span class="kpi-label">Google</span><span class="kpi-delta warn">−10,5%</span></div><div class="kpi-value">861<span class="unit">визит</span></div><div class="kpi-sub">март: <b>962</b></div></div>
+        <div class="kpi"><div class="kpi-top"><span class="kpi-label">Период</span><span class="kpi-delta info">до 28.04</span></div><div class="kpi-value">8<span class="unit">недель</span></div><div class="kpi-sub">сравниваем март и апрель</div></div>
+      </div>
+      <div class="card"><div class="card-head"><div><h3 class="card-title">Визиты из поиска по неделям</h3><p class="card-desc">Общий поиск пока почти на уровне марта. Главный плюс апреля — рост Яндекса; Google по трафику просел, хотя позиции в нём стали лучше.</p></div><span class="card-tag warn">апрель не закрыт</span></div><div class="chart" id="chart-traffic"></div></div>
+    </section>
+
+    <section id="full-table" class="report-section">
+      <h2 class="section-title">Полная таблица позиций <span class="meta">239 запросов</span></h2>
+      <details class="table-disclosure">
+        <summary>Показать полную таблицу позиций <span>Для проверки: 239 запросов с позициями в Яндексе и Google по датам.</span></summary>
+        <div class="card table-card"><div class="table-head"><div><h3>Все отслеживаемые запросы</h3><p>В таблице можно посмотреть каждый запрос по датам. Цвет показывает место в поиске: <span class="legend-chip" style="background:#10b981;color:#fff;">1–3</span> топ-3 · <span class="legend-chip" style="background:#d1fae5;color:#047857;">4–10</span> топ-10 · <span class="legend-chip" style="background:#fef3c7;color:#92400e;">11–30</span> топ-30 · <span class="legend-chip" style="background:#fee2e2;color:#991b1b;">31–100</span> топ-100 · <span class="legend-chip" style="background:#f1f0f5;color:#8a85a3;box-shadow:inset 0 0 0 1px var(--border);">—</span> не найдено.</p></div></div><div class="table-wrap"><table class="data" id="salve-position-table"><thead><tr><th rowspan="2" style="vertical-align:bottom;">Запрос</th><th colspan="4" style="text-align:center;border-right:1px solid var(--border);background:rgba(245,158,11,.06);color:#b67517;">Яндекс</th><th colspan="4" style="text-align:center;background:rgba(124,92,255,.05);color:var(--primary);">Google</th></tr><tr><th style="text-align:center;background:rgba(245,158,11,.04)">04.02</th><th style="text-align:center;background:rgba(245,158,11,.04)">31.03</th><th style="text-align:center;background:rgba(245,158,11,.04)">28.04</th><th style="text-align:center;background:var(--surface-2);border-right:1px solid var(--border);">Δ</th><th style="text-align:center;background:rgba(124,92,255,.03)">04.02</th><th style="text-align:center;background:rgba(124,92,255,.03)">31.03</th><th style="text-align:center;background:rgba(124,92,255,.03)">28.04</th><th style="text-align:center;background:var(--surface-2);">Δ</th></tr></thead><tbody id="full-positions-body"></tbody></table></div></div>
+      </details>
+    </section>
+
+    <section id="next" class="report-section">
+      <h2 class="section-title good">Итог и следующий месяц</h2>
+      <div class="final-card"><h3>Итог апреля: отдельные страницы услуг начали приносить рост</h3><p>За апрель сайт стал заметнее в поиске: в Яндексе топ-10 вырос с 168 до 206 запросов, в Google — со 177 до 187. Лучше всего сработали направления, где у пациента есть понятная страница услуги. В мае дорабатываем услуги, где страницы пока слишком общие: добавляем цену, врача, ответы на вопросы и переход к записи.</p></div>
+      <div class="next-steps">
+        <div class="step-card"><div class="step-num">1</div><h3>Доработать выросшие страницы</h3><p>Добавить недостающие ответы, цены, блоки доверия и понятные переходы к записи на страницы, которые уже поднялись.</p></div>
+        <div class="step-card"><div class="step-num">2</div><h3>Создать страницы под новые услуги</h3><p>Выбрать услуги, где есть спрос, но страница пока слабая или слишком общая. Для каждой показать услугу, цену, врача и запись.</p></div>
+        <div class="step-card"><div class="step-num">3</div><h3>Повторить удачный формат</h3><p>Сделать такие же понятные страницы для других направлений, чтобы больше пациентов находили сайт по услугам взрослой стоматологии.</p></div>
+      </div>
+      <div class="footnotes"><p>Позиция меньше — лучше: 1 означает первое место в выдаче. «Видимость» — количество запросов, по которым сайт найден в поиске. Это не равно визитам и заявкам: сначала растут позиции, затем показы и переходы.</p><p>Позиции сравниваем по контрольным датам 04.02, 31.03 и 28.04. Трафик за апрель показан по доступным данным на дату отчёта.</p></div>
+    </section>
   </div>
   <!-- DETAILS REPORT END -->
 </main>
@@ -345,9 +498,48 @@ function wrapLabel(value, max=22) { const words = String(value).split(' '); cons
 function tierChart(id, tiers) { const chart = echarts.init(document.getElementById(id), null, {renderer:'svg'}); chart.setOption({ color:[T.t3,T.t10,T.t30,T.t100,T.tna], tooltip:{trigger:'axis',axisPointer:{type:'shadow'}}, legend:{top:0,itemWidth:22,itemHeight:12,itemGap:8,textStyle:{color:T.text3,fontSize:10}}, grid:grid(), xAxis:{type:'category',data:REPORT.controlLabels,axisTick:{show:false},axisLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, yAxis:{type:'value',axisLine:{show:false},splitLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, series:[{name:'Топ-3',type:'bar',stack:'total',data:tiers.map(x=>x.top3),barMaxWidth:54},{name:'Топ 4-10',type:'bar',stack:'total',data:tiers.map(x=>x.top10),barMaxWidth:54},{name:'Топ 11-30',type:'bar',stack:'total',data:tiers.map(x=>x.top30),barMaxWidth:54},{name:'Топ 31-100',type:'bar',stack:'total',data:tiers.map(x=>x.top100),barMaxWidth:54},{name:'Не видно',type:'bar',stack:'total',data:tiers.map(x=>x.na),barMaxWidth:54}] }); charts.push(chart); }
 function newChart() { const chart = echarts.init(document.getElementById('chart-new'), null, {renderer:'svg'}); chart.setOption({ color:[T.primary,T.teal], tooltip:{trigger:'axis',axisPointer:{type:'shadow'}}, legend:{top:0,itemWidth:22,itemHeight:12,itemGap:8,textStyle:{color:T.text3,fontSize:10}}, grid:grid(), xAxis:{type:'category',data:['31.03','09.04','28.04'],axisTick:{show:false},axisLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, yAxis:{type:'value',axisLine:{show:false},splitLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, series:[{name:'Яндекс · топ-10',type:'bar',data:REPORT.newY.map(x=>x.top10),barMaxWidth:34,label:{show:true,position:'top',color:T.text2,fontWeight:600}},{name:'Google · топ-10',type:'bar',data:REPORT.newG.map(x=>x.top10),barMaxWidth:34,label:{show:true,position:'top',color:T.text2,fontWeight:600}}] }); charts.push(chart); }
 function groupsChart() { const groups = REPORT.groupsY.slice().sort((a,b)=>(a.top10End-a.top10Start)-(b.top10End-b.top10Start)); const el = document.getElementById('chart-groups'); const narrow = el.clientWidth < 560; const chart = echarts.init(el, null, {renderer:'svg'}); chart.setOption({ color:['#cfc8f8',T.primary], tooltip:{trigger:'axis',axisPointer:{type:'shadow'}}, legend:{top:0,textStyle:{color:T.text3,fontSize:11}}, grid:{left:narrow?142:210,right:28,top:46,bottom:28}, xAxis:{type:'value',axisLine:{show:false},splitLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, yAxis:{type:'category',data:groups.map(x=>x.group),axisTick:{show:false},axisLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3,fontSize:11,width:narrow?124:190,overflow:'break',lineHeight:14,formatter:v=>wrapLabel(v,narrow?14:22)}}, series:[{name:'31.03 в топ-10',type:'bar',data:groups.map(x=>x.top10Start),barMaxWidth:18},{name:'28.04 в топ-10',type:'bar',data:groups.map(x=>x.top10End),barMaxWidth:18,label:{show:true,position:'right',color:T.text2,fontSize:11}}] }); charts.push(chart); }
+function briefTrafficChart() { const el = document.getElementById('brief-traffic-chart'); if (!el) return; const chart = echarts.init(el, null, {renderer:'svg'}); chart.setOption({ color:[T.primary,T.warn,T.good], tooltip:{trigger:'axis',formatter:ps=>`<b>${ps[0].axisValue}</b><br>`+ps.map(p=>`${p.marker}${p.seriesName}: <b>${ruNum(p.value)}</b>`).join('<br>')}, legend:{top:8,left:10,textStyle:{color:T.text3,fontSize:11}}, grid:{left:40,right:18,top:58,bottom:36,containLabel:true}, xAxis:{type:'category',data:REPORT.traffic.map(x=>x.period),axisTick:{show:false},axisLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3,fontSize:11,rotate:0}}, yAxis:{type:'value',axisLine:{show:false},splitLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3,formatter:v=>ruNum(v)}}, series:[{name:'Всего из поиска',type:'line',smooth:true,data:REPORT.traffic.map(x=>x.total),lineStyle:{width:4},symbolSize:8,areaStyle:{opacity:.13}},{name:'Яндекс',type:'bar',data:REPORT.traffic.map(x=>x.yandex),barMaxWidth:24},{name:'Google',type:'bar',data:REPORT.traffic.map(x=>x.google),barMaxWidth:24}] }); charts.push(chart); }
 function trafficChart() { const chart = echarts.init(document.getElementById('chart-traffic'), null, {renderer:'svg'}); chart.setOption({ color:[T.text2,T.warn,T.primary], tooltip:{trigger:'axis',formatter:ps=>`<b>${ps[0].axisValue}</b><br>`+ps.map(p=>`${p.marker}${p.seriesName}: <b>${ruNum(p.value)}</b>`).join('<br>')}, legend:{top:0,textStyle:{color:T.text3,fontSize:11}}, graphic:{type:'text',right:10,top:26,style:{text:'апрель: данные на 28.04',fill:T.text3,fontSize:11,fontWeight:500}}, grid:{left:38,right:16,top:52,bottom:40,containLabel:true}, xAxis:{type:'category',data:REPORT.traffic.map(x=>x.period),axisTick:{show:false},axisLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3,fontSize:10,rotate:20}}, yAxis:{type:'value',axisLine:{show:false},splitLine:{lineStyle:{color:T.border}},axisLabel:{color:T.text3}}, series:[{name:'Всего',type:'line',smooth:true,data:REPORT.traffic.map(x=>x.total),lineStyle:{width:3},symbolSize:7},{name:'Яндекс',type:'bar',data:REPORT.traffic.map(x=>x.yandex),barMaxWidth:18},{name:'Google',type:'bar',data:REPORT.traffic.map(x=>x.google),barMaxWidth:18}] }); charts.push(chart); }
+function growthDelta(start, end) {
+  const s = start == null ? 101 : start;
+  const e = end == null ? 101 : end;
+  return s - e;
+}
+function posLite(v) {
+  return `<td class="pos-cell ${tierClass(v)}"><span class="pill">${v == null ? 'не было' : String(v)}</span></td>`;
+}
+function resultText(start, end) {
+  const diff = growthDelta(start, end);
+  if (start == null && end != null) return end <= 10 ? 'появился в топ-10' : 'появился в поиске';
+  if (diff > 0) return `выше на ${diff}`;
+  if (diff < 0) return `ниже на ${Math.abs(diff)}`;
+  return 'без изменений';
+}
+function isAdultDirection(row) {
+  const text = `${row.group} ${row.query}`.toLowerCase();
+  return !/(детск|детям|детей|ребен|ребён|молочн|севоран|фиссур)/.test(text);
+}
+function renderGrowth(target, engine) {
+  const tbody = document.getElementById(`growth-${target}-body`);
+  const summary = document.getElementById(`growth-${target}-summary`);
+  if (!tbody) return;
+  const start = engine === 'y' ? 'y0331' : 'g0331';
+  const end = engine === 'y' ? 'y0428' : 'g0428';
+  const rows = REPORT.fullRows
+    .filter(isAdultDirection)
+    .filter(row => row[end] != null && growthDelta(row[start], row[end]) > 0)
+    .sort((a, b) => growthDelta(b[start], b[end]) - growthDelta(a[start], a[end]))
+    .slice(0, 10);
+  tbody.innerHTML = rows.map(row => `<tr><td class="q-cell">${esc(row.query)}</td>${posLite(row[start])}${posLite(row[end])}<td><span class="result-note">${resultText(row[start], row[end])}</span></td></tr>`).join('');
+  if (summary) {
+    const top10 = rows.filter(row => row[end] != null && row[end] <= 10).length;
+    const top3 = rows.filter(row => row[end] != null && row[end] <= 3).length;
+    summary.innerHTML = `<b>${rows.length} запросов показаны как примеры роста.</b> ${top10} уже в топ-10, ${top3} в топ-3.`;
+  }
+}
 function buildTables() {
-  document.getElementById('new-queries-body').innerHTML = REPORT.newRows.map(r => `<tr><td class="q-cell">${esc(r.query)}</td>${posTd(r.y0409)}${posTd(r.y0428)}${posTd(r.g0409)}${posTd(r.g0428)}</tr>`).join('');
+  renderGrowth('yandex', 'y');
+  renderGrowth('google', 'g');
   const grouped = new Map();
   REPORT.fullRows.forEach(row => { if (!grouped.has(row.group)) grouped.set(row.group, []); grouped.get(row.group).push(row); });
   let html = '';
@@ -357,9 +549,14 @@ function buildTables() {
       html += `<tr><td class="q-cell">${esc(r.query)}</td>${posTd(r.y0204)}${posTd(r.y0331)}${posTd(r.y0428)}<td class="delta-cell" style="border-right:1px solid var(--border);">${deltaPill(r.y0331, r.y0428)}</td>${posTd(r.g0204)}${posTd(r.g0331)}${posTd(r.g0428)}<td class="delta-cell">${deltaPill(r.g0331, r.g0428)}</td></tr>`;
     });
   });
-  document.getElementById('full-positions-body').innerHTML = html;
+  const full = document.getElementById('full-positions-body');
+  if (full) full.innerHTML = html;
 }
-window.addEventListener('DOMContentLoaded', () => { buildTables(); tierChart('chart-yandex', REPORT.tiersY); tierChart('chart-google', REPORT.tiersG); newChart(); groupsChart(); trafficChart(); });
+window.addEventListener('DOMContentLoaded', () => {
+  buildTables();
+  briefTrafficChart();
+  trafficChart();
+});
 window.addEventListener('resize', () => charts.forEach(c => c.resize()));
 window.addEventListener('beforeprint', () => charts.forEach(c => c.resize({width:760})));
 window.addEventListener('afterprint', () => charts.forEach(c => c.resize()));
